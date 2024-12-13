@@ -9,8 +9,8 @@
 #
 # This script is distributed to support the CoNLL-2013 Shared Task.
 # It is free for research and educational purposes.
-
-from sgmllib import SGMLParser
+import sgmllib3k 
+from sgmllib3k import SGMLParser
 from nucle_doc import nucle_doc
 
 
