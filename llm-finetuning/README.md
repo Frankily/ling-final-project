@@ -1,3 +1,7 @@
+```
+modal run --detach src.train --config=config/llama-3-instruct.yml --data=data/cleaned.jsonl
+```
+
 # Fine-tune any LLM in minutes (ft. Mixtral, LLaMA, Mistral)
 
 This guide will show you how to fine-tune any LLM quickly using [`modal`](https://github.com/modal-labs/modal-client) and [`axolotl`](https://github.com/axolotl-ai-cloud/axolotl).
