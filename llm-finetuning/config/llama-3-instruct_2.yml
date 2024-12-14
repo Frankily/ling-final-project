@@ -2,7 +2,7 @@
 # Model Configuration: LLaMA-3 8B
 ###
 
-base_model: NousResearch/Meta-Llama-3-8B-Instruct
+base_model: NousResearch/Meta-Llama-3.1-8B-Instruct
 sequence_len: 4096
 
 # base model weight quantization
@@ -38,18 +38,13 @@ datasets:
       field_output: output
       # Custom format to include headers and structure for the chat roles.
       format: |-
-        <|begin_of_text|>
-        <|start_header_id|>system<|end_header_id|>
-        
-        Cutting Knowledge Date: December 2023
-        Today Date: 26 Jul 2024
-        
-        You are a reasoning chatbot.<|eot_id|>
-        <|start_header_id|>user<|end_header_id|>
-        Fix all mistakes in the text (spelling, punctuation, grammar, etc) and respond with the correct version of the text free of all mistakes. If there are no errors, respond with the original text.
-        Text: {input}<|eot_id|>
-        <|start_header_id|>assistant<|end_header_id|>
+        <|begin_of_text|><|start_header_id|>system<|end_header_id|>
 
+        You are a grammar error correction chatbot.<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+        Fix all mistakes in the text (spelling, punctuation, grammar, etc) and respond with the correct version of the text free of all mistakes. If there are no errors, respond with the original text.
+        Text: {input}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+        
 # dataset formatting config{}
 tokens:
   - "<|begin_of_text|>"
@@ -58,7 +53,7 @@ tokens:
   - "<|eot_id|>"
 
 special_tokens:
-  pad_token: <|end_of_text|>
+  pad_token: <|eot_id|>
 
 val_set_size: 0.05
 
