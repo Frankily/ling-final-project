@@ -20,8 +20,8 @@ def convert_csv_to_jsonl(input_file, output_file):
             f.write(json.dumps(example, ensure_ascii=False) + '\n')
 
 if __name__ == "__main__":
-    input_file = "../examples_conll14st.csv"
-    output_file = "data/examples_conll14st.jsonl"
+    input_file = "../wi+locness/m2/examples_a3.csv"
+    output_file = "data/examples_a3.jsonl"
     
     convert_csv_to_jsonl(input_file, output_file)
     print(f"Converted {input_file} to {output_file}") 
