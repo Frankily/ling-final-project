@@ -2,7 +2,7 @@
 # Model Configuration: LLaMA-3 8B
 ###
 
-base_model: NousResearch/Meta-Llama-3.1-8B-Instruct
+base_model: NousResearch/Meta-Llama-3-8B-Instruct
 sequence_len: 4096
 
 # base model weight quantization
@@ -14,8 +14,8 @@ flash_attention: true
 # finetuned adapter config
 adapter: lora
 lora_model_dir:
-lora_r: 48
-lora_alpha: 96
+lora_r: 8
+lora_alpha: 16
 lora_dropout: 0.05
 lora_target_linear: true
 lora_fan_in_fan_out:
