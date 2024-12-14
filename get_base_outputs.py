@@ -30,4 +30,4 @@ for i, row in df.iterrows():
     if i % 50 == 0:
         print(i)
 df['Generated Statements'] = generated_statements
-df.to_csv("base_model_test.csv", index = False)
+df.to_csv("finetuned_model_test.csv", index = False)
