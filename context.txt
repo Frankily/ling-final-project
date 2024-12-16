@@ -107,7 +107,7 @@ Output: The relationship between genetic diseases and inherited genes needs clar
 Explanation: Other error. The original sentence is unclear and requires clarification.
 
 Input: Genetic disease has a close relationship with the born gene.
-Output: [No correction possible without additional context.]
+Output: Genetic disease has a close relationship with the born gene.
 Explanation: Unclear meaning error. Genetic disease has a close relationship with the born gene. Requires clarification to make meaningful corrections.
 
 Input: Genetic disease is one of the most difficult types of disease to treat.
