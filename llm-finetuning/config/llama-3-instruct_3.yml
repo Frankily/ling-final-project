@@ -42,12 +42,11 @@ datasets:
 # dataset formatting config{}
 tokens:
   - "<|begin_of_text|>"
-  - "<|start_header_id|>"
-  - "<|end_header_id|>"
-  - "<|eot_id|>"
+  - "<|im_start|>"
+  - "<|im_end|>"
 
 special_tokens:
-  pad_token: <|eot_id|>
+  pad_token: <|end_of_text|>
 
 val_set_size: 0.05
 
