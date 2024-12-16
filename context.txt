@@ -1,0 +1,111 @@
+Input: Medical technology during that time is not advanced enough to cure him.
+Output: Medical technology during that time was not advanced enough to cure him.
+Explanation: Verb tense error. Medical technology during that time [is → was] not advanced enough to cure him.
+
+Input: Although the problem would not be serious, people would still be afraid.
+Output: Although the problem may not be serious, people might still be afraid.
+Explanation: Verb modal error. Although the problem [would → may] not be serious, people [would → might] still be afraid.
+
+Input: However, there are also a great number of people who against this technology.
+Output: However, there are also a great number of people who are against this technology.
+Explanation: Missing verb error. However, there are also a great number of people [who → who are] against this technology.
+
+Input: A study in 2010 shown that patients recover faster when surrounded by family members.
+Output: A study in 2010 showed that patients recover faster when surrounded by family members.
+Explanation: Verb form error. A study in 2010 [shown → showed] that patients recover faster when surrounded by family members.
+
+Input: The benefits of disclosing genetic risk information outweighs the costs.
+Output: The benefits of disclosing genetic risk information outweigh the costs.
+Explanation: Subject-verb agreement error. The benefits of disclosing genetic risk information [outweighs → outweigh] the costs.
+
+Input: It is obvious to see that internet saves people time and also connects people globally.
+Output: It is obvious to see that the internet saves people time and also connects people globally.
+Explanation: Article or determiner error. It is obvious to see that [internet → the internet] saves people time and also connects people globally.
+
+Input: A carrier may consider not having any child after getting married.
+Output: A carrier may consider not having any children after getting married.
+Explanation: Noun number error. A carrier may consider not having any [child → children] after getting married.
+
+Input: Someone should tell the carriers relatives about the genetic problem.
+Output: Someone should tell the carrier’s relatives about the genetic problem.
+Explanation: Noun possessive error. Someone should tell the [carriers → carrier’s] relatives about the genetic problem.
+
+Input: A couple should run a few tests to see if their have any genetic diseases beforehand.
+Output: A couple should run a few tests to see if they have any genetic diseases beforehand.
+Explanation: Pronoun form error. A couple should run a few tests to see if [their → they] have any genetic diseases beforehand.
+
+Input: It is everyone’s duty to ensure that he or she undergo regular health checks.
+Output: It is everyone’s duty to ensure that they undergo regular health checks.
+Explanation: Pronoun reference error. It is everyone’s duty to ensure that [he or she → they] undergo regular health checks.
+
+Input: This essay will discuss about whether a carrier should tell his relatives or not.
+Output: This essay will discuss whether a carrier should tell his relatives or not.
+Explanation: Preposition error. This essay will [discuss about → discuss] whether a carrier should tell his relatives or not.
+
+Input: Early examination is healthy and will cast away unwanted doubts.
+Output: Early examination is advisable and will cast away unwanted doubts.
+Explanation: Wrong collocation/idiom error. Early examination is [healthy → advisable] and will cast away unwanted doubts.
+
+Input: After WOWII, the population of China decreased rapidly.
+Output: After World War II, the population of China decreased rapidly.
+Explanation: Acronym error. After [WOWII → World War II], the population of China decreased rapidly.
+
+Input: The sense of guilty can be more than expected.
+Output: The sense of guilt can be more than expected.
+Explanation: Word form error. The sense of [guilty → guilt] can be more than expected.
+
+Input: It’s our family and relatives that bring us up.
+Output: It is our family and relatives that bring us up.
+Explanation: Tone error. [It’s → It is] our family and relatives that bring us up.
+
+Input: The issue is highly debatable, a genetic risk could come from either side of the family.
+Output: The issue is highly debatable. A genetic risk could come from either side of the family.
+Explanation: Run-on sentence error. The issue is highly [debatable, a → debatable. A] genetic risk could come from either side of the family.
+
+Input: Undeniable, it becomes addictive when we spend more time socializing virtually.
+Output: It is undeniable that it becomes addictive when we spend more time socializing virtually.
+Explanation: Dangling modifier error. [Undeniable, → It is undeniable that] it becomes addictive when we spend more time socializing virtually.
+
+Input: We must pay attention to this information and assisting those who are at risk.
+Output: We must pay attention to this information and assist those who are at risk.
+Explanation: Parallelism error. We must pay attention to this information and [assisting → assist] those who are at risk.
+
+Input: However, from the ethical point of view.
+Output: However, from the ethical point of view, this is a significant concern.
+Explanation: Sentence fragment error. [However, from the ethical point of view.] requires additional context to form a complete sentence.
+
+Input: This is an issue needs to be addressed.
+Output: This is an issue that needs to be addressed.
+Explanation: Subordinate clause error. This is an issue [needs → that needs] to be addressed.
+
+Input: Someone having what kind of disease is a matter of their own privacy.
+Output: What kind of disease someone has is a matter of their own privacy.
+Explanation: Incorrect word order error. [Someone having what kind of disease → What kind of disease someone has] is a matter of their own privacy.
+
+Input: In conclusion, personally I feel that it is important to tell one’s family members.
+Output: In conclusion, I personally feel that it is important to tell one’s family members.
+Explanation: Incorrect adjective/adverb order error. In conclusion, [personally I → I personally] feel that it is important to tell one’s family members.
+
+Input: It is sometimes hard to find out one has this disease.
+Output: It is sometimes hard to find out if one has this disease.
+Explanation: Linking word error. It is sometimes hard to find [out → out if] one has this disease.
+
+Input: This knowledge maybe relavant to them.
+Output: This knowledge may be relevant to them.
+Explanation: Spelling and punctuation error. This knowledge [maybe relavant → may be relevant] to them.
+
+Input: It is up to the patient’s own choice to disclose information.
+Output: It is up to the patient to disclose information.
+Explanation: Redundancy error. It is up to the [patient’s own choice → patient] to disclose information.
+
+Input: There is no properly formatted citation for this source.
+Output: Ensure the citation is correctly formatted in APA style: (Author, Year).
+Explanation: Poor citation practice. Requires proper citation formatting.
+
+Input: Genetic disease has a close relationship with the born gene.
+Output: The relationship between genetic diseases and inherited genes needs clarification.
+Explanation: Other error. The original sentence is unclear and requires clarification.
+
+Input: Genetic disease has a close relationship with the born gene.
+Output: [No correction possible without additional context.]
+Explanation: Unclear meaning error. Genetic disease has a close relationship with the born gene. Requires clarification to make meaningful corrections.
