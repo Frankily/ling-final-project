@@ -14,8 +14,8 @@ flash_attention: true
 # finetuned adapter config
 adapter: lora
 lora_model_dir:
-lora_r: 8
-lora_alpha: 16
+lora_r: 32
+lora_alpha: 64
 lora_dropout: 0.05
 lora_target_linear: true
 lora_fan_in_fan_out:
@@ -37,7 +37,7 @@ datasets:
       field_input: input
       field_output: output
       # Custom format to include headers and structure for the chat roles.
-      format: "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nYou are a grammar error correction chatbot.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nFix all mistakes in the text (spelling, punctuation, grammar, etc) and respond with the correct version of the text free of all mistakes. If there are no errors, respond with the original text.\nText: {input}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+      format: "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nYou are a grammar error correction writing assistant.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nFix all mistakes in the text (spelling, punctuation, grammar, etc) and respond with the correct version of the text free of all mistakes. If there are no errors, respond with the original text.\nText: {input}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
         
 # dataset formatting config{}
 tokens:
@@ -62,7 +62,7 @@ seed: 117
 optimizer: adamw_bnb_8bit
 learning_rate: 0.00005
 lr_scheduler: cosine
-num_epochs: 2
+num_epochs: 1
 micro_batch_size: 16
 gradient_accumulation_steps: 1
 warmup_steps: 10
