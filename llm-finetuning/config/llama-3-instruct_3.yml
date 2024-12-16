@@ -3,7 +3,7 @@
 ###
 
 base_model: NousResearch/Hermes-2-Theta-Llama-3-70B
-sequence_len: 4096
+sequence_len: 128
 
 # base model weight quantization
 load_in_8bit: true
@@ -14,8 +14,8 @@ flash_attention: true
 # finetuned adapter config
 adapter: lora
 lora_model_dir:
-lora_r: 8
-lora_alpha: 16
+lora_r: 4
+lora_alpha: 8
 lora_dropout: 0.05
 lora_target_linear: true
 lora_fan_in_fan_out:
@@ -62,7 +62,7 @@ optimizer: adamw_bnb_8bit
 learning_rate: 0.00005
 lr_scheduler: cosine
 num_epochs: 1
-micro_batch_size: 16
+micro_batch_size: 1
 gradient_accumulation_steps: 1
 warmup_steps: 10
 
