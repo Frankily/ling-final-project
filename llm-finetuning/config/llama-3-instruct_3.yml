@@ -37,7 +37,7 @@ datasets:
       field_input: input
       field_output: output
       # Custom format to include headers and structure for the chat roles.
-      format: "<|begin_of_text|><|im_start|>system\nYou are a grammar error correction writing assistant.<|im_end|>\n<|im_start|>user\nFix all mistakes in the text (spelling, punctuation, grammar, etc) and respond with the correct version of the text free of all mistakes. If there are no errors, respond with the original text.\nText: {input}<|im_end|>\n<|im_start|>assistant"
+      format: "<|begin_of_text|><|im_start|>system\nYou are a grammar error correction writing assistant.<|im_end|>\n<|im_start|>user\nRespond with no framing text. If there are mistakes in the text, fix all mistakes in the text (spelling, punctuation, grammar, etc) and respond with only the correct version of the text free of all mistakes. If there are no errors, respond with the original text. Remember to respond without any framing text in both cases.\nText: {input}<|im_end|>\n<|im_start|>assistant"
         
 # dataset formatting config{}
 tokens:
