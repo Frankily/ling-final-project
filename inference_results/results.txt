@@ -12,14 +12,10 @@ TP	FP	FN	Prec	Rec	F0.5
 
 Finetuned llama 3 8b instruct - ALL SENTENCES
 
+=========== Span-Based Correction ============
+TP	FP	FN	Prec	Rec	F0.5
+772	1873	1619	0.2919	0.3229	0.2976
+==============================================
+
 Model llama 3 8b instruct - ALL SENTENCES + PROMPTS
 
-Finetuned llama 3 8b instruct - ALL SENTENCES + PROMPTS
-
-Model llama 3 70b instruct - ALL SENTENCES
-
-Finetuned llama 3 70b instruct - ALL SENTENCES
-
-Model llama 3 70b instruct - ALL SENTENCES + PROMPTS
-
-Finetuned llama 3 70b instruct - ALL SENTENCES + PROMPTS

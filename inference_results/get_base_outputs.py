@@ -26,11 +26,11 @@ for i, row in df.iterrows():
     # Add examples to the beginning of the prompt
     user_input = (
         f"<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n"
-        f"You are a grammar error correction writing assistant.\n\n"
+        f"You are a grammar error correction writing assistant."
         f"<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n"
         f"Fix all mistakes in the text (spelling, punctuation, grammar, etc) and respond with the correct version of the text free of all mistakes. "
-        f"If there are no errors, respond with the original text.\nText: {row[0]}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
-        f"Here are some useful examples of different types of possible grammatical corrections:\n{examples}\n\n"
+        f"If there are no errors, respond with the original text. Here are some useful examples of different types of possible grammatical corrections, and the input text is at the end.\n"
+        f"{examples}\n\n Here is the input text that might need correction.\nInput: {row[0]}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
     )
     url = 'https://praximai--example-axolotl-inference-web.modal.run'
     try:
@@ -44,4 +44,4 @@ for i, row in df.iterrows():
 
 # Add the generated statements to the DataFrame and save
 df['Generated Statements'] = generated_statements
-df.to_csv("finetuned_model_all.csv", index=False)
+df.to_csv("generated_outputs/base_prompt.csv", index=False)
