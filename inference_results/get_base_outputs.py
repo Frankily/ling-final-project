@@ -13,11 +13,11 @@ def make_get_request(base_url, input_param):
     
     return response
 
-df = pd.read_csv("examples_test.csv")
+df = pd.read_csv("/Users/frankli/Desktop/Yale Classes/Classes 2024/Ling/final/ling-final-project/csv_data/test_0.csv")
 generated_statements = []
 for i, row in df.iterrows():
     # print(row[0])
-    user_input = f"<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nYou are a grammar error correction chatbot.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nFix all mistakes in the text (spelling, punctuation, grammar, etc) and respond with the correct version of the text free of all mistakes. If there are no errors, respond with the original text.\nText: {row[0]}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+    user_input = f"<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nYou are a grammar error correction writing assistant.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nFix all mistakes in the text (spelling, punctuation, grammar, etc) and respond with the correct version of the text free of all mistakes. If there are no errors, respond with the original text.\nText: {row[0]}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
     url = 'https://praximai--example-axolotl-inference-web.modal.run'
     try:
         response = make_get_request(url, user_input)
@@ -30,4 +30,4 @@ for i, row in df.iterrows():
     if i % 50 == 0:
         print(i)
 df['Generated Statements'] = generated_statements
-df.to_csv("finetuned_model_test.csv", index = False)
+df.to_csv("finetuned_model_all.csv", index = False)
