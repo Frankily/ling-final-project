@@ -44,4 +44,4 @@ for i, row in df.iterrows():
 
 # Add the generated statements to the DataFrame and save
 df['Generated Statements'] = generated_statements
-df.to_csv("generated_outputs/base_prompt.csv", index=False)
+df.to_csv("generated_outputs/finetuned_prompt.csv", index=False)

@@ -70,3 +70,21 @@ Recall      : 0.5183
 F_0.5       : 0.5061
 
 =====================
+finetuned_prompt model and 0 annotation results:
+Precision   : 0.3200
+Recall      : 0.3689
+F_0.5       : 0.3287
+
+=====================
+finetuned_prompt model and 1 annotation results:
+Precision   : 0.4667
+Recall      : 0.4079
+F_0.5       : 0.4536
+
+=====================
+finetuned_prompt model and combined annotation results:
+Precision   : 0.5047
+Recall      : 0.5195
+F_0.5       : 0.5076
+
+=====================

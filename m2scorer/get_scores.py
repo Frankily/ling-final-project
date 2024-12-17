@@ -1,6 +1,6 @@
 import subprocess
 
-file_names = ['base', 'finetuned', 'finetuned_all', 'base_prompt']
+file_names = ['finetuned_prompt']
 annotations = ['0', '1', 'combined']
 
 num_scores = 0
