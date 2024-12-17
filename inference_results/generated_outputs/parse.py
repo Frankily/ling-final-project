@@ -18,4 +18,4 @@ def extract_first_line_and_remove_quotes(statement):
 df['Generated Statements'] = df['Generated Statements'].apply(extract_first_line_and_remove_quotes)
 
 # Save the modified DataFrame back to a CSV file
-df.to_csv('modified_file.csv', index=False)
+df.to_csv('base_prompt2.csv', index=False)
