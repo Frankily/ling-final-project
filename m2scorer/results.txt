@@ -1,0 +1,72 @@
+base model and 0 annotation results:
+Precision   : 0.1555
+Recall      : 0.3517
+F_0.5       : 0.1750
+
+=====================
+base model and 1 annotation results:
+Precision   : 0.2363
+Recall      : 0.4088
+F_0.5       : 0.2581
+
+=====================
+base model and combined annotation results:
+Precision   : 0.2571
+Recall      : 0.5067
+F_0.5       : 0.2852
+
+=====================
+finetuned model and 0 annotation results:
+Precision   : 0.3846
+Recall      : 0.3831
+F_0.5       : 0.3843
+
+=====================
+finetuned model and 1 annotation results:
+Precision   : 0.5461
+Recall      : 0.4157
+F_0.5       : 0.5139
+
+=====================
+finetuned model and combined annotation results:
+Precision   : 0.5849
+Recall      : 0.5405
+F_0.5       : 0.5755
+
+=====================
+finetuned_all model and 0 annotation results:
+Precision   : 0.4309
+Recall      : 0.3915
+F_0.5       : 0.4224
+
+=====================
+finetuned_all model and 1 annotation results:
+Precision   : 0.5876
+Recall      : 0.4004
+F_0.5       : 0.5373
+
+=====================
+finetuned_all model and combined annotation results:
+Precision   : 0.6382
+Recall      : 0.5376
+F_0.5       : 0.6152
+
+=====================
+base_prompt model and 0 annotation results:
+Precision   : 0.3184
+Recall      : 0.3668
+F_0.5       : 0.3271
+
+=====================
+base_prompt model and 1 annotation results:
+Precision   : 0.4671
+Recall      : 0.4103
+F_0.5       : 0.4545
+
+=====================
+base_prompt model and combined annotation results:
+Precision   : 0.5032
+Recall      : 0.5183
+F_0.5       : 0.5061
+
+=====================
