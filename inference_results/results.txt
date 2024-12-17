@@ -19,3 +19,7 @@ TP	FP	FN	Prec	Rec	F0.5
 
 Model llama 3 8b instruct - ALL SENTENCES + PROMPTS
 
+=========== Span-Based Correction ============
+TP	FP	FN	Prec	Rec	F0.5
+710	2878	1681	0.1979	0.2969	0.212
+==============================================
