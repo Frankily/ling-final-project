@@ -29,7 +29,7 @@ for i, row in df.iterrows():
         f"You are a grammar error correction writing assistant."
         f"<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n"
         f"Fix all mistakes in the text (spelling, punctuation, grammar, etc) and respond with the correct version of the text free of all mistakes. "
-        f"If there are no errors, respond with the original text. Here are some useful examples of different types of possible grammatical corrections, and the input text is at the end.\n"
+        f"If there are no errors, respond with the original text. In your responses, give only either the original or corrected version of the text, without any framing text. Here are some useful examples of different types of possible grammatical corrections, and the input text is at the end.\n"
         f"{examples}\n\n Here is the input text that might need correction.\nInput: {row[0]}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
     )
     url = 'https://praximai--example-axolotl-inference-web.modal.run'
