@@ -1,7 +1,7 @@
 # ling-final-project
 
 requirements:
-torch, errant, modal, nltk
+torch, errant, modal, nltk, spacy
 
 Original data are in benchmark_data (CoNLL 2014 Shared Task), release3.3 (NUCLE dataset), and wi+locness(BEA Train dataset), folders. Scripts to retrieve these and several other datasets are found in get_data_scripts. Training data csv files with columns 'Before Statements' with errors, "After Statements" with corrections, and "Error Correction" with a list of edits, are found in the csv_data folder. Data formatted in a jsonl for finetuning can be found in llm-finetuning/data. 
 
